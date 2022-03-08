@@ -163,7 +163,7 @@ class LoginScreen: UIView {
             self.registerButton.topAnchor.constraint(equalTo: self.loginButton.bottomAnchor, constant: 15),
             self.registerButton.leadingAnchor.constraint(equalTo: self.emailTextField.leadingAnchor),
             self.registerButton.trailingAnchor.constraint(equalTo: self.emailTextField.trailingAnchor),
-            self.registerButton.heightAnchor.constraint(equalTo: self.emailTextField.heightAnchor)
+            self.registerButton.heightAnchor.constraint(equalTo: self.emailTextField.heightAnchor),
         ])
     }
 
