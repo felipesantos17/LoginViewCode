@@ -30,11 +30,9 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController: LoginScreenProtocol {
     func actionLoginButton() {
-        print("deu certo login")
     }
     
     func actionRegisterButton() {
-        print("deu certo register")
         let viewController: RegisterViewController = RegisterViewController()
         self.navigationController?.pushViewController(viewController, animated: true)
     }
@@ -42,9 +40,13 @@ extension LoginViewController: LoginScreenProtocol {
 
 extension LoginViewController: UITextFieldDelegate {
     
-    // aprender como fazer para abrir o teclado e fechar ele depois
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        self.loginScreen?.validaTextFields()
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
+        return true
     }
     
 }
