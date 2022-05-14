@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F269E95282F30FB002BC341 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F269E94282F30FB002BC341 /* GoogleService-Info.plist */; };
+		8F269E98282F35EE002BC341 /* Alerta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F269E97282F35EE002BC341 /* Alerta.swift */; };
 		BA070B8778DA3F73513658C1 /* Pods_LoginViewCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C454F36B3291C24CBC66D0FE /* Pods_LoginViewCode.framework */; };
 		C945B3D32745347C00C55CBF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C945B3D22745347C00C55CBF /* RegisterViewController.swift */; };
 		C958B69E2743F99700C36C75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C958B69D2743F99700C36C75 /* AppDelegate.swift */; };
@@ -20,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		520928A504909D25EBD7D6AD /* Pods-LoginViewCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginViewCode.release.xcconfig"; path = "Target Support Files/Pods-LoginViewCode/Pods-LoginViewCode.release.xcconfig"; sourceTree = "<group>"; };
+		8F269E94282F30FB002BC341 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8F269E97282F35EE002BC341 /* Alerta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerta.swift; sourceTree = "<group>"; };
 		C454F36B3291C24CBC66D0FE /* Pods_LoginViewCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginViewCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A0F9A6798F2A3C172F298E /* Pods-LoginViewCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginViewCode.debug.xcconfig"; path = "Target Support Files/Pods-LoginViewCode/Pods-LoginViewCode.debug.xcconfig"; sourceTree = "<group>"; };
 		C945B3D22745347C00C55CBF /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -54,13 +58,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8F269E96282F35DB002BC341 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8F269E97282F35EE002BC341 /* Alerta.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C042E50534185F9487E623B7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				C4A0F9A6798F2A3C172F298E /* Pods-LoginViewCode.debug.xcconfig */,
 				520928A504909D25EBD7D6AD /* Pods-LoginViewCode.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -110,6 +121,7 @@
 		C958B69C2743F99700C36C75 /* LoginViewCode */ = {
 			isa = PBXGroup;
 			children = (
+				8F269E96282F35DB002BC341 /* Models */,
 				C945B3CE2745344C00C55CBF /* Register */,
 				C958B6B12744338600C36C75 /* Login */,
 				C958B69D2743F99700C36C75 /* AppDelegate.swift */,
@@ -117,6 +129,7 @@
 				C958B6A62743F99900C36C75 /* Assets.xcassets */,
 				C958B6A82743F99900C36C75 /* LaunchScreen.storyboard */,
 				C958B6AB2743F99900C36C75 /* Info.plist */,
+				8F269E94282F30FB002BC341 /* GoogleService-Info.plist */,
 			);
 			path = LoginViewCode;
 			sourceTree = "<group>";
@@ -208,6 +221,7 @@
 			files = (
 				C958B6AA2743F99900C36C75 /* LaunchScreen.storyboard in Resources */,
 				C958B6A72743F99900C36C75 /* Assets.xcassets in Resources */,
+				8F269E95282F30FB002BC341 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +276,7 @@
 			files = (
 				C9B0C8A9278D100E00E6FEC3 /* RegisterScreen.swift in Sources */,
 				C958B6A22743F99700C36C75 /* LoginViewController.swift in Sources */,
+				8F269E98282F35EE002BC341 /* Alerta.swift in Sources */,
 				C945B3D32745347C00C55CBF /* RegisterViewController.swift in Sources */,
 				C958B6B5274433EE00C36C75 /* LoginScreen.swift in Sources */,
 				C958B69E2743F99700C36C75 /* AppDelegate.swift in Sources */,

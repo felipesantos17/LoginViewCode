@@ -150,6 +150,14 @@ class LoginScreen: UIView {
         }
     }
     
+    public func getEmail() -> String {
+        return self.emailTextField.text ?? ""
+    }
+    
+    public func getPassword() -> String {
+        return self.passwordTextField.text ?? ""
+    }
+    
     //equal to:
     //basear em um determinado elemento.
     
