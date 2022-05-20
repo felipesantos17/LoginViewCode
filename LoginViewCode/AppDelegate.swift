@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  LoginViewCode
-//
-//  Created by Felipe Santos on 16/11/21.
-//
-
 import UIKit
 import SnapKit
 import FirebaseCore

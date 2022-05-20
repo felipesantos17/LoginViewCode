@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  LoginViewCode
-//
-//  Created by Felipe Santos on 16/11/21.
-//
-
 import UIKit
 import Firebase
 
@@ -12,6 +5,7 @@ class LoginViewController: UIViewController {
     
     var loginScreen: LoginScreen?
     var auth: Auth?
+    var alert: Alert?
     
     override func loadView() {
         self.loginScreen = LoginScreen()
@@ -23,6 +17,7 @@ class LoginViewController: UIViewController {
         self.loginScreen?.delegate(delegate: self)
         self.loginScreen?.configTextFieldDelegate(delegate: self)
         self.auth = Auth.auth()
+        self.alert = Alert(controller: self)
     }
    
     override func viewWillAppear(_ animated: Bool) {
@@ -37,12 +32,12 @@ extension LoginViewController: LoginScreenProtocol {
         
         self.auth?.signIn(withEmail: login.getEmail(), password: login.getPassword(), completion: { usuario, error in
             if error != nil {
-                print("Erro, dados incorretos")
+                self.alert?.getAlert(titulo: "Atenção", mensagem: "dados incorretos")
             } else {
                 if usuario == nil {
-                    print("Tivemos um problema, tente mais tarde.")
+                    self.alert?.getAlert(titulo: "Atenção", mensagem: "Tivemos um problema, tente mais tarde.")
                 } else {
-                    print("Logado")
+                    self.alert?.getAlert(titulo: "Sucesso", mensagem: "Logado")
                 }
             }
         })

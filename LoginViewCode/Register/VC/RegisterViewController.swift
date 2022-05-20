@@ -1,10 +1,3 @@
-//
-//  RegisterViewController.swift
-//  LoginViewCode
-//
-//  Created by Felipe Santos on 17/11/21.
-//
-
 import UIKit
 import Firebase
 
@@ -13,6 +6,7 @@ class RegisterViewController: UIViewController {
     var registerScreen: RegisterScreen?
     
     var auth: Auth?
+    var alert: Alert?
     
     override func loadView() {
         self.registerScreen = RegisterScreen()
@@ -24,6 +18,7 @@ class RegisterViewController: UIViewController {
         self.registerScreen?.configTextFieldDelegate(delegate: self)
         self.registerScreen?.delegate(delegate: self)
         self.auth = Auth.auth()
+        self.alert = Alert(controller: self)
     }
     
 }
@@ -50,9 +45,11 @@ extension RegisterViewController: RegisterScreenProtocol {
         
         self.auth?.createUser(withEmail: register.getEmail(), password: register.getPassword(), completion: { (result, error) in
             if error != nil {
-                Alerta.init(controller: self).exibe(titulo: "Erro", mensagem: "\(error.debugDescription)")
+                self.alert?.getAlert(titulo: "Atenção", mensagem: "Erro ao cadastrar.")
             } else {
-                Alerta.init(controller: self).exibe(titulo: "Sucesso", mensagem: "Cadastro feito com sucesso.")
+                self.alert?.getAlert(titulo: "Sucesso", mensagem: "Cadastrado", completion: {
+                    self.navigationController?.popViewController(animated: true)
+                })
             }
         })
         
