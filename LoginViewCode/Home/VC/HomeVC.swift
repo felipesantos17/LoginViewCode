@@ -26,11 +26,11 @@ class HomeVC: UIViewController {
 
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let color:[UIColor] = [.orange, .red, .blue, .brown, .gray]
+        let color:[UIColor] = [.orange, .red, .blue, .gray]
         let cell: UITableViewCell = UITableViewCell()
         cell.backgroundColor = color[indexPath.row]
         return cell
