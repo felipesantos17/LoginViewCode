@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8F269E95282F30FB002BC341 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F269E94282F30FB002BC341 /* GoogleService-Info.plist */; };
+		8F64470228B33F2C0052208B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F64470128B33F2C0052208B /* HomeVC.swift */; };
+		8F64470428B33FF50052208B /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F64470328B33FF50052208B /* HomeScreen.swift */; };
 		8FFC819228372087000DA556 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFC819128372087000DA556 /* Alert.swift */; };
 		BA070B8778DA3F73513658C1 /* Pods_LoginViewCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C454F36B3291C24CBC66D0FE /* Pods_LoginViewCode.framework */; };
 		C945B3D32745347C00C55CBF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C945B3D22745347C00C55CBF /* RegisterViewController.swift */; };
@@ -23,6 +25,8 @@
 /* Begin PBXFileReference section */
 		520928A504909D25EBD7D6AD /* Pods-LoginViewCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginViewCode.release.xcconfig"; path = "Target Support Files/Pods-LoginViewCode/Pods-LoginViewCode.release.xcconfig"; sourceTree = "<group>"; };
 		8F269E94282F30FB002BC341 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8F64470128B33F2C0052208B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		8F64470328B33FF50052208B /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		8FFC819128372087000DA556 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		C454F36B3291C24CBC66D0FE /* Pods_LoginViewCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginViewCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A0F9A6798F2A3C172F298E /* Pods-LoginViewCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginViewCode.debug.xcconfig"; path = "Target Support Files/Pods-LoginViewCode/Pods-LoginViewCode.debug.xcconfig"; sourceTree = "<group>"; };
@@ -56,6 +60,31 @@
 				C454F36B3291C24CBC66D0FE /* Pods_LoginViewCode.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F6446FE28B33ED20052208B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8F64470028B33F130052208B /* VC */,
+				8F6446FF28B33EFB0052208B /* Screen */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8F6446FF28B33EFB0052208B /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				8F64470328B33FF50052208B /* HomeScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		8F64470028B33F130052208B /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				8F64470128B33F2C0052208B /* HomeVC.swift */,
+			);
+			path = VC;
 			sourceTree = "<group>";
 		};
 		8FFC819028371FA2000DA556 /* Alert */ = {
@@ -121,6 +150,7 @@
 		C958B69C2743F99700C36C75 /* LoginViewCode */ = {
 			isa = PBXGroup;
 			children = (
+				8F6446FE28B33ED20052208B /* Home */,
 				8FFC819028371FA2000DA556 /* Alert */,
 				C945B3CE2745344C00C55CBF /* Register */,
 				C958B6B12744338600C36C75 /* Login */,
@@ -279,7 +309,9 @@
 				C945B3D32745347C00C55CBF /* RegisterViewController.swift in Sources */,
 				C958B6B5274433EE00C36C75 /* LoginScreen.swift in Sources */,
 				C958B69E2743F99700C36C75 /* AppDelegate.swift in Sources */,
+				8F64470428B33FF50052208B /* HomeScreen.swift in Sources */,
 				8FFC819228372087000DA556 /* Alert.swift in Sources */,
+				8F64470228B33F2C0052208B /* HomeVC.swift in Sources */,
 				C958B6A02743F99700C36C75 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
