@@ -10,10 +10,16 @@ import UIKit
 class HomeVC: UIViewController {
     
     var homeScreen: HomeScreen?
-    var data:[DataUser] = [
+    var dataUser:[DataUser] = [
         DataUser(name: "Caio", nameImage: "menino1"),
         DataUser(name: "Felipe", nameImage: "menino2"),
         DataUser(name: "Gabi", nameImage: "menina1"),
+    ]
+    var dataSport: [Sport] = [
+        Sport(name: "Corrida", image: "corrida"),
+        Sport(name: "Ciclismo", image: "ciclismo"),
+        Sport(name: "Natação", image: "natacao"),
+        Sport(name: "Yoga", image: "yoga"),
     ]
 
     override func loadView() {
@@ -31,23 +37,23 @@ class HomeVC: UIViewController {
 
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count + 1
+        return dataUser.count + 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if indexPath.row == 3 {
             let cell: SportTableTableViewCell? = tableView.dequeueReusableCell(withIdentifier: SportTableTableViewCell.identifier, for: indexPath) as? SportTableTableViewCell
-            
+            cell?.dataColletion(data: self.dataSport)
             return cell ?? UITableViewCell()
         }
         
         let cell: UserDetailTableViewCell? = tableView.dequeueReusableCell(withIdentifier: UserDetailTableViewCell.identifier, for: indexPath) as? UserDetailTableViewCell
-        cell?.setupCell(data: data[indexPath.row])
+        cell?.setupCell(data: dataUser[indexPath.row])
         return cell ?? UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 120
     }
 }

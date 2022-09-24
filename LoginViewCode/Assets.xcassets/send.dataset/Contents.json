@@ -1,6 +1,7 @@
 {
-  "colors" : [
+  "data" : [
     {
+      "filename" : "send.wav",
       "idiom" : "universal"
     }
   ],

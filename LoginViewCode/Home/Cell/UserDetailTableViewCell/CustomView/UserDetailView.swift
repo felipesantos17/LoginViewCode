@@ -12,7 +12,7 @@ class UserDetailView: UIView {
     lazy var userImageView: UIImageView = {
         let image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
-        image.contentMode = .scaleAspectFit
+        image.contentMode = .scaleToFill
         return image
     }()
     

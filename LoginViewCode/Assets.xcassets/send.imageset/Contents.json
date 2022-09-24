@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "avatar_face_man_boy_male_profile_smiley_happy_people_icon_181657.svg",
+      "filename" : "send.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "send@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "send@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

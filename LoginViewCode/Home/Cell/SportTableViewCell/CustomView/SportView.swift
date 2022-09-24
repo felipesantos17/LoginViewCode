@@ -13,8 +13,9 @@ class SportView: UIView {
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: .init())
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.showsHorizontalScrollIndicator = false
-        collectionView.backgroundColor = .darkGray
+        collectionView.backgroundColor = .white
         collectionView.delaysContentTouches = false
+        collectionView.register(SportCollectionViewCell.self, forCellWithReuseIdentifier: SportCollectionViewCell.identifier)
         
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout.init()
         layout.scrollDirection = .horizontal
@@ -33,17 +34,13 @@ class SportView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func addSubview() {
-        self.addSubview(collectionView)
+    public func configProtocolsColletionView(delegate: UICollectionViewDelegate, dataSource: UICollectionViewDataSource) {
+        self.collectionView.delegate = delegate
+        self.collectionView.dataSource = dataSource
     }
     
-    private func configConstraints() {
-        NSLayoutConstraint.activate([
-            collectionView.topAnchor.constraint(equalTo: self.topAnchor),
-            collectionView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            collectionView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            collectionView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
-        ])
+    private func addSubview() {
+        self.addSubview(collectionView)
     }
     
     private func configConstraintsCollectionView() {

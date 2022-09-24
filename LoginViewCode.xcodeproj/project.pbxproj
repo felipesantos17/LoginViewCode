@@ -10,6 +10,9 @@
 		8F269E95282F30FB002BC341 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F269E94282F30FB002BC341 /* GoogleService-Info.plist */; };
 		8F64470228B33F2C0052208B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F64470128B33F2C0052208B /* HomeVC.swift */; };
 		8F64470428B33FF50052208B /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F64470328B33FF50052208B /* HomeScreen.swift */; };
+		8F9D076328DF5A31004548C5 /* SportCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9D076228DF5A31004548C5 /* SportCollectionViewCell.swift */; };
+		8F9D076528DF5A8B004548C5 /* SportColletionViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9D076428DF5A8B004548C5 /* SportColletionViewCellScreen.swift */; };
+		8F9D076828DF9787004548C5 /* Sport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9D076728DF9787004548C5 /* Sport.swift */; };
 		8FC73AB128DB7A69004EEFED /* DataUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC73AB028DB7A69004EEFED /* DataUser.swift */; };
 		8FC73AB428DB8169004EEFED /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC73AB328DB8169004EEFED /* UserDetailView.swift */; };
 		8FC73AB828DB8461004EEFED /* SportTableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC73AB728DB8461004EEFED /* SportTableTableViewCell.swift */; };
@@ -32,6 +35,9 @@
 		8F269E94282F30FB002BC341 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8F64470128B33F2C0052208B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		8F64470328B33FF50052208B /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		8F9D076228DF5A31004548C5 /* SportCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportCollectionViewCell.swift; sourceTree = "<group>"; };
+		8F9D076428DF5A8B004548C5 /* SportColletionViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportColletionViewCellScreen.swift; sourceTree = "<group>"; };
+		8F9D076728DF9787004548C5 /* Sport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sport.swift; sourceTree = "<group>"; };
 		8FC73AB028DB7A69004EEFED /* DataUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUser.swift; sourceTree = "<group>"; };
 		8FC73AB328DB8169004EEFED /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
 		8FC73AB728DB8461004EEFED /* SportTableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportTableTableViewCell.swift; sourceTree = "<group>"; };
@@ -99,10 +105,28 @@
 			path = VC;
 			sourceTree = "<group>";
 		};
+		8F9D076128DF59EC004548C5 /* ColletionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8F9D076628DF5A96004548C5 /* ColletionCustomCustomView */,
+				8F9D076228DF5A31004548C5 /* SportCollectionViewCell.swift */,
+			);
+			path = ColletionViewCell;
+			sourceTree = "<group>";
+		};
+		8F9D076628DF5A96004548C5 /* ColletionCustomCustomView */ = {
+			isa = PBXGroup;
+			children = (
+				8F9D076428DF5A8B004548C5 /* SportColletionViewCellScreen.swift */,
+			);
+			path = ColletionCustomCustomView;
+			sourceTree = "<group>";
+		};
 		8FC73AAF28DB7A59004EEFED /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				8FC73AB028DB7A69004EEFED /* DataUser.swift */,
+				8F9D076728DF9787004548C5 /* Sport.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -127,6 +151,7 @@
 		8FC73AB628DB8433004EEFED /* SportTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				8F9D076128DF59EC004548C5 /* ColletionViewCell */,
 				8FC73AB928DB8501004EEFED /* CustomView */,
 				8FC73AB728DB8461004EEFED /* SportTableTableViewCell.swift */,
 			);
@@ -370,7 +395,9 @@
 				C9B0C8A9278D100E00E6FEC3 /* RegisterScreen.swift in Sources */,
 				8FC73AB828DB8461004EEFED /* SportTableTableViewCell.swift in Sources */,
 				C958B6A22743F99700C36C75 /* LoginViewController.swift in Sources */,
+				8F9D076328DF5A31004548C5 /* SportCollectionViewCell.swift in Sources */,
 				C945B3D32745347C00C55CBF /* RegisterViewController.swift in Sources */,
+				8F9D076828DF9787004548C5 /* Sport.swift in Sources */,
 				C958B6B5274433EE00C36C75 /* LoginScreen.swift in Sources */,
 				8FC73AB428DB8169004EEFED /* UserDetailView.swift in Sources */,
 				8FC73AB128DB7A69004EEFED /* DataUser.swift in Sources */,
@@ -379,6 +406,7 @@
 				8F64470428B33FF50052208B /* HomeScreen.swift in Sources */,
 				8FFC819228372087000DA556 /* Alert.swift in Sources */,
 				8FC73ABB28DB8525004EEFED /* SportView.swift in Sources */,
+				8F9D076528DF5A8B004548C5 /* SportColletionViewCellScreen.swift in Sources */,
 				8F64470228B33F2C0052208B /* HomeVC.swift in Sources */,
 				C958B6A02743F99700C36C75 /* SceneDelegate.swift in Sources */,
 			);

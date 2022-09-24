@@ -139,34 +139,6 @@ class RegisterScreen: UIView {
         return self.passwordTextField.text ?? ""
     }
     
-//    private func setUpContraints(){
-//
-//        NSLayoutConstraint.activate([
-//            self.imageAddUserView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 20),
-//            self.imageAddUserView.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-//            self.imageAddUserView.widthAnchor.constraint(equalToConstant: 150),
-//            self.imageAddUserView.heightAnchor.constraint(equalToConstant: 150),
-//
-//            self.backButton.topAnchor.constraint(equalTo: self.imageAddUserView.topAnchor),
-//            self.backButton.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-//
-//            self.emailTextField.topAnchor.constraint(equalTo: self.imageAddUserView.bottomAnchor, constant: 10),
-//            self.emailTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-//            self.emailTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
-//            self.emailTextField.heightAnchor.constraint(equalToConstant: 45),
-//
-//            self.passwordTextField.topAnchor.constraint(equalTo: self.emailTextField.bottomAnchor, constant: 15),
-//            self.passwordTextField.leadingAnchor.constraint(equalTo: self.emailTextField.leadingAnchor),
-//            self.passwordTextField.trailingAnchor.constraint(equalTo: self.emailTextField.trailingAnchor),
-//            self.passwordTextField.heightAnchor.constraint(equalTo: emailTextField.heightAnchor),
-//
-//            self.registerButton.topAnchor.constraint(equalTo: self.passwordTextField.bottomAnchor, constant: 15),
-//            self.registerButton.leadingAnchor.constraint(equalTo: self.emailTextField.leadingAnchor),
-//            self.registerButton.trailingAnchor.constraint(equalTo: self.emailTextField.trailingAnchor),
-//            self.registerButton.heightAnchor.constraint(equalTo: emailTextField.heightAnchor),
-//        ])
-//    }
-    
     func configImageAddUserViewConstraint() {
         self.imageAddUserView.snp.makeConstraints { make in
             make.top.equalTo(self.safeAreaLayoutGuide.snp.top).offset(20)

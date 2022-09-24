@@ -89,7 +89,6 @@ class LoginScreen: UIView {
         super.init(frame: frame)
         self.configBackGround()
         self.configSuperView()
-//        self.setUpContraints()
         self.configLoginLabelConstraint()
         self.configLogoAppImageViewConstraint()
         self.configEmailTextFieldConstraint()
@@ -165,42 +164,6 @@ class LoginScreen: UIView {
     
     //equalToConstant:
     //setando um valor fixo para um terminado elemento.
-    
-//    private func setUpContraints(){
-//
-//        NSLayoutConstraint.activate([
-//
-//            self.loginLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 20),
-//            self.loginLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-//
-//
-//            self.logoAppImageView.topAnchor.constraint(equalTo: self.loginLabel.bottomAnchor, constant: 20),
-//            self.logoAppImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 60),
-//            self.logoAppImageView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -60),
-//            self.logoAppImageView.heightAnchor.constraint(equalToConstant: 200),
-//
-//
-//            self.emailTextField.topAnchor.constraint(equalTo: self.logoAppImageView.bottomAnchor, constant: 20),
-//            self.emailTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
-//            self.emailTextField.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
-//            self.emailTextField.heightAnchor.constraint(equalToConstant: 45),
-//
-//            self.passwordTextField.topAnchor.constraint(equalTo: self.emailTextField.bottomAnchor, constant: 15),
-//            self.passwordTextField.leadingAnchor.constraint(equalTo: self.emailTextField.leadingAnchor),
-//            self.passwordTextField.trailingAnchor.constraint(equalTo: self.emailTextField.trailingAnchor),
-//            self.passwordTextField.heightAnchor.constraint(equalTo: self.emailTextField.heightAnchor),
-//
-//            self.loginButton.topAnchor.constraint(equalTo: self.passwordTextField.bottomAnchor, constant: 15),
-//            self.loginButton.leadingAnchor.constraint(equalTo: self.emailTextField.leadingAnchor),
-//            self.loginButton.trailingAnchor.constraint(equalTo: self.emailTextField.trailingAnchor),
-//            self.loginButton.heightAnchor.constraint(equalTo: self.emailTextField.heightAnchor),
-//
-//            self.registerButton.topAnchor.constraint(equalTo: self.loginButton.bottomAnchor, constant: 15),
-//            self.registerButton.leadingAnchor.constraint(equalTo: self.emailTextField.leadingAnchor),
-//            self.registerButton.trailingAnchor.constraint(equalTo: self.emailTextField.trailingAnchor),
-//            self.registerButton.heightAnchor.constraint(equalTo: self.emailTextField.heightAnchor),
-//        ])
-//    }
     
     //offset = valor positivo
     //inset = valor negativo
